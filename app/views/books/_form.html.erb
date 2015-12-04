@@ -1,0 +1,18 @@
+<%= form_for(@book) do |f| %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :resume %><br>
+    <%= f.number_field :resume %>
+  </div>
+  <div class="field">
+    <%= f.label :year_published %><br>
+    <%= f.text_field :year_published %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
